@@ -1,6 +1,6 @@
-const textArea = document.querySelector("text-area");
-const mensaje = document.querySelector("mensaje");
-const copia = document.querySelector("copiar");
+const textArea = document.querySelector(".text-area");
+const mensaje = document.querySelector(".mensaje");
+const copia = document.querySelector(".copiar");
 copia.style.display = "none"
 
 
@@ -20,13 +20,27 @@ function btnEncriptar(){
     if(!validarTexto()) {
         const textoEncriptado = encriptar(textArea.value)
         mensaje.value = textoEncriptado
-        mensaje.style.backgroundImage = "none"
-        textArea.value = "";
         copia.style.display = "block"
     
     }
 }
 
+const animate =spanChar=>{
+    let cambiosDeLetra = 0;
+    return new Promise(resolve=>{
+        const intervalo = setInterval(()=>{
+            let letra = String.fromCharCode(Math.floor(Math.random()*26)+97);
+            spanChar.textContent = letra;
+            cambiosDeLetra++;
+            if(cambiosDeLetra>20){
+                clearInterval(intervalo);
+                resolve();
+            }
+        }
+        ,100)
+    }
+    )
+}
 //Laves de encriptacion
 // `La letra "e" es convertida para "enter"`
 // `La letra "i" es convertida para "imes"`

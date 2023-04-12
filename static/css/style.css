@@ -24,7 +24,7 @@ header{
 }
 h1{
   position: absolute; 
-  top: 15%;
+  top: 12%;
   font-size: 50px;
   color: white;
 }
@@ -110,4 +110,3 @@ textarea {
   box-shadow: #D6D6E7 0 3px 7px inset;
   transform: translateY(2px);
 }
-

@@ -25,22 +25,6 @@ function btnEncriptar(){
     }
 }
 
-const animate =spanChar=>{
-    let cambiosDeLetra = 0;
-    return new Promise(resolve=>{
-        const intervalo = setInterval(()=>{
-            let letra = String.fromCharCode(Math.floor(Math.random()*26)+97);
-            spanChar.textContent = letra;
-            cambiosDeLetra++;
-            if(cambiosDeLetra>20){
-                clearInterval(intervalo);
-                resolve();
-            }
-        }
-        ,100)
-    }
-    )
-}
 //Laves de encriptacion
 // `La letra "e" es convertida para "enter"`
 // `La letra "i" es convertida para "imes"`

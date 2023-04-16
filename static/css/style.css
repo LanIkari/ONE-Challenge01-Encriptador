@@ -1,82 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap");
 
-*{
-    font-family: 'Source Code Pro', monospace;
+* {
+  font-family: "Source Code Pro", monospace;
+}
+main {
+  height: 89vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f2c79;
+  overflow: hidden;
+}
+header {
+  position: relative;
+  background-color: #2f2c79;
+}
+.alura, .oracle {
+  display: inline-block;
+  padding-top: 10px;
+  margin-left: 10px;
+  width: 12%;
+}
+.oracle{
+  margin-left: 72%;
+}
 
-}
-main{
-    height: 89vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2f2c79;
-    overflow: hidden;
-}
-header{
-    position: relative;
-    background-color: #2f2c79
-    ;
-}
-.logo{
-    padding-top: 10px;
-    margin-left: 10px;
-    width: 10%;
-}
-h1{
-  position: absolute; 
+
+h1 {
+  position: absolute;
   top: 12%;
   font-size: 50px;
   color: white;
 }
-.icons{
-    display: inline-block;
-    position: static;
-    margin-bottom: 15px;
-    margin-left: 43%;
-    width: 15%;
+.icons {
+  display: inline-block;
+  position: static;
+  margin-bottom: 15px;
+  margin-left: 43%;
+  width: 15%;
 }
-section{
-    display: inline-block;
-    padding: 15px;
-    margin: 0 2%;
-    box-shadow: 8px 8px 35px 0px #000000;
-    border-radius: 4px;
+section {
+  display: inline-block;
+  padding: 15px;
+  margin: 0 2%;
+  box-shadow: 8px 8px 35px 0px #000000;
+  border-radius: 4px;
 }
 textarea {
-    display: flex;
-    width: 500px;
-    height: 350px;
-    font-size: x-large;
-    background-color:#292b36 ;
-    border: none;
-    outline: none;
-    resize: none;
-    color:white;
-    border-radius: 5px;
+  display: flex;
+  width: 500px;
+  height: 350px;
+  font-size: x-large;
+  background-color: #292b36;
+  border: none;
+  outline: none;
+  resize: none;
+  color: white;
+  border-radius: 5px;
 }
 
-
-.buttons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
 }
-
 
 /* CSS */
-.btn-encriptar, .btn-desencriptar,  .copiar{
+.btn-encriptar,
+.btn-desencriptar,
+.copiar {
   align-items: center;
   appearance: none;
-  background-color: #FCFCFD;
+  background-color: #fcfcfd;
   border-radius: 4px;
   border-width: 0;
-  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   box-sizing: border-box;
-  color: #36395A;
+  color: #36395a;
   cursor: pointer;
   display: inline-flex;
-  font-family: "Source Code Pro",monospace;
+  font-family: "Source Code Pro", monospace;
   height: 48px;
   justify-content: center;
   line-height: 1;
@@ -88,25 +93,33 @@ textarea {
   position: relative;
   text-align: left;
   text-decoration: none;
-  transition: box-shadow .15s,transform .15s;
+  transition: box-shadow 0.15s, transform 0.15s;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
   white-space: nowrap;
-  will-change: box-shadow,transform;
+  will-change: box-shadow, transform;
   font-size: 20px;
 }
 
-.btn-encriptar:focus, .btn-desencriptar:focus,  .copiar:focus {
-  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+.btn-encriptar:focus,
+.btn-desencriptar:focus,
+.copiar:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
 }
 
-.btn-encriptar:hover, .btn-desencriptar:hover,  .copiar:hover{
-  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+.btn-encriptar:hover,
+.btn-desencriptar:hover,
+.copiar:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
   transform: translateY(-2px);
 }
 
-.btn-encriptar:active, .btn-desencriptar:active,  .copiar:active {
-  box-shadow: #D6D6E7 0 3px 7px inset;
+.btn-encriptar:active,
+.btn-desencriptar:active,
+.copiar:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
   transform: translateY(2px);
 }

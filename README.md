@@ -33,5 +33,5 @@ Puedes checar el desafio en: [Challenge ONE Principiante en programación](https
 
 ## Prueba mi proyecto 🔗
 
-[Encriptador](https://lanikari.github.io/Sprint01-Encriptador/)
+[Encriptador](https://lanikari.github.io/ONE-Challenge01-Encriptador/)
 

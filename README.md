@@ -15,7 +15,10 @@ Puedes checar el desafio en: [Challenge ONE Principiante en programación](https
 
 ![Encriptado](https://user-images.githubusercontent.com/42923366/232342576-d5866269-5ecd-4ee2-842e-2637a0f9fe6f.gif)
 
-
+## Badge ONE :1st_place_medal:
+<p align="center">
+<a href="https://d335luupugsy2.cloudfront.net/cms%2Ffiles%2F10224%2F1671210503Prancheta_3.png?utm_campaign=alura_latam_-_challenge_email_projeto_1_esp&utm_medium=email&utm_source=RD+Station"><img src="static/img/PrincipianteProgramacion.png" alt="badge" style=" height: 250px; margin-left: 100px;"></a>
+</p>
 
 ## Construido con :hammer_and_wrench:
 
